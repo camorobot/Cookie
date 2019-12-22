@@ -1,12 +1,10 @@
-
 <?php
     session_start();
-    require 'dbcreds.php';
     
-    //$portal_user = $_POST('username');
     $result = mysqli_query($dbconnect, "select * from users where username = '$username' and password = '$password'") 
         or die("Failed to query database ".mysqli_error($dbconnect));
     $row = mysqli_fetch_array($result);
+    
     if ($row['username'] == $username && !empty($username) && $row['password'] && !empty($password) == $password){
         $_SESSION['cookie-allow'] = true;
         $_SESSION['username'] = $username;
