@@ -20,7 +20,7 @@
 
     <form action="/ask-cookies.php" method="POST">
         <input type="text" value=" <?php echo $url ?> ">
-        <button type="submit">SUBIT</button>
+        <button type="submit"></button>
     </form>
 
 <?php
