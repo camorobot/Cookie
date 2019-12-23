@@ -25,7 +25,10 @@
     <form action="assets/php/cookie.php">
         <input type="text" name="DIT IS DE POST NAME">
         <button type="submit">Ik accepteer de cookies</button>
-        <?php echo $a ?>
+        <?php echo $url ?>
     </form>
+
+    
+
 </body>
 </html>
