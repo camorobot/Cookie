@@ -15,7 +15,6 @@
     }
 </style>
 <body>
-
     <?php $url = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>
 
     <form action="https://cookies.boompje5.nl/" name="cookie-form" method="POST">
@@ -24,11 +23,12 @@
     
     <?php
         session_start();
-        if (isset($_SESSION['test1']) && $_SESSION['test1'] == true) {
+        if (isset($_SESSION['tracking']) && $_SESSION['tracking'] == true) {
         } else{
             echo '<script src="assets/js/auto-submit.js"></script>';
         }
     ?>
+
     <h1>WEBSITE NUMMER 1 - COOKIES ZIJN GOED GEKEURD</h1>
     <a href="assets/php/drop.php">DROP COOKIE</a>
 </body>

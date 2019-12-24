@@ -1,5 +1,5 @@
 <?php
 	session_start();
-    unset($_SESSION['test1']);
+    unset($_SESSION['tracking']);
 	header("location: /");
 ?>
