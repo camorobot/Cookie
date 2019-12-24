@@ -13,19 +13,17 @@
 </style>
 <body>
     <?php
-        $a = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; 
-        session_start();
+        $homeurl = $_POST['homeurl'];
         if (isset($_SESSION['test1']) && $_SESSION['test1'] == true) {
-            header('location: https://google.com');
-        } else{
-        
+            header('location: /');
+        } else{ 
         }
     ?>
     <h1>COOKIES NOG ACCEPTEREN</h1>
-    <form action="assets/php/cookie.php">
-        <input type="text" name="DIT IS DE POST NAME">
+    <p>De site <?php echo $homeurl; ?> maakt gebruik van cookies. u moet deze accepter om door te gaan</p>
+    <form action="assets/php/cookie.php" method="POST">
+        <input type="hidden" name="homeurl" value=" <?php echo $homeurl; ?>">
         <button type="submit">Ik accepteer de cookies</button>
-        <?php echo $url ?> 
     </form>
 
     
