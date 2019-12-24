@@ -18,8 +18,8 @@
 
     <?php $url = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>
 
-    <form action="/ask-cookies.php" name="cookie-form" method="POST">
-        <input type="text" name="homeurl" value=" <?php echo $url ?> ">
+    <form action="https://cookies.boompje5.nl/" name="cookie-form" method="POST">
+        <input type="text" name="homeurl" value="<?php echo $url ?>">
     </form>
     
     <?php
