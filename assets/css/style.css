@@ -1,0 +1,50 @@
+body{
+    background: url("../img/background.png");
+    background-position: -20px 0px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+a{
+    color: #424159;
+}
+
+.container-background{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 25vw;
+    height: 80vh;
+    margin: 10vh auto 0px auto;
+    box-shadow: 4px 3px 4px 3px rgba(0, 0, 0, 0.150);
+}
+
+.inner-container{
+    margin: 40px;
+}
+
+#text{
+    margin: 40px 0px 60px;
+}
+
+button{
+    color: white;
+    background-color: #424159;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 80px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#link{
+    margin-top: 35px;
+}
